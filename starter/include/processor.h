@@ -3,10 +3,10 @@
 
 class Processor {
  public:
-  float Utilization();  // TODO: See src/processor.cpp
-
-  // TODO: Declare any necessary private members
+  float Utilization();
  private:
+  long previous_total_{0};
+  long previous_idle_{0};
 };
 
 #endif
